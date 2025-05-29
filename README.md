@@ -8,7 +8,6 @@ Cette image Docker est basée sur Keycloak 26.2.4 et inclut les outils Kerberos 
 
 ## Utilisation
 
-```bash
 docker run -d \
   --name keycloak-kerb \
   -e KEYCLOAK_ADMIN=admin \
@@ -16,4 +15,4 @@ docker run -d \
   -v /etc/krb5.conf:/etc/krb5.conf:ro \
   -v /etc/keycloak.keytab:/etc/keycloak.keytab:ro \
   -p 8080:8080 \
-  ghcr.io/<ton_utilisateur_github>/custom-keycloak:26.2.4 start-dev
+  custom-keycloak:26.2.4 start-dev
